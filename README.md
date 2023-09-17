@@ -22,4 +22,10 @@ Esse programa não está dando o resultado esperado, onde cada chave (44 dígito
 ## **3) copiar todos os arquivos dentro de uma pasta para uma outra pasta.py**
 
 Esse programa serve pra facilitar o trabalho de entrar em todas as pastas presentes dentro de uma pasta e colar numa outra pasta.
+
 Há uma interação com o usuário para ele informar a pasta de origem dos arquivos e a pasta onde o python vai colar os arquivos (a pasta de destino deve estar fora da pasta de origem)
+
+## **4)zipar_xmls**
+
+Esse programa serve pra zipar 10.000 XMLs de determinada pasta indicada pelo usuário por vez.
+Assim, se tiver 16.520 XMLs na pasta ele vai fazer um zip com 10.000 XMLs e outro com 6.520.
