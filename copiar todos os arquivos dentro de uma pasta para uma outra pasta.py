@@ -3,7 +3,7 @@
 import shutil
 import os
 import pathlib
-print("Esse programa vai extrair todos os arquivos de dentro de uma pasta (incluindo arquivos dentro de subpastas) para outra pasta. A pasta de origem dos arquivos e a pasta que ele vai colar os arquivos não podem ser iguais.\nEsse programa serve pra facilitar o trabalho de entrar em todas as pastas presentes dentro de uma pasta e colar numa outra pasta.")
+print("Esse programa vai extrair todos os arquivos de dentro de uma pasta (incluindo arquivos dentro de subpastas) para outra pasta. A pasta de destino deve estar fora da pasta de origem que vc informar.\nEsse programa serve pra facilitar o trabalho de entrar em todas as pastas presentes dentro de uma pasta e colar numa outra pasta.")
 
 # Insira, em src, o caminho da pasta que estão os arquivos que vc queira copiar
 src = input("\nCopie o caminho da pasta de origem (que o Python vai extrair os arquivos de dentro) e clique com o botão direito do mouse aqui para colar >>>> ").replace('\\','/')
