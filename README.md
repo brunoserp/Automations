@@ -1,7 +1,7 @@
 # automatizacoes
 Alguns processos mecânicos que automatizei
 
-pdf merger.py:
+1) pdf merger.py:
 Junta vários PDFs em um só por meio de interações com o usuário.
 
 Há 3 tipos de processos:
