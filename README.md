@@ -13,7 +13,7 @@ Há 3 tipos de processos:
 O arquivo final é criado na mesma pasta que tiverem todos os PDFs.
 
 
-## **2) extrair a chave NFe (44 dígitos) do xml.py:**##
+## **2) extrair a chave NFe (44 dígitos) do xml.py:**
   
 Extrai a chave da nota fiscal, composta por 44 dígitos, de cada XML de uma pasta indicada pelo usuário.
   
@@ -32,5 +32,5 @@ Assim, se tiver 16.520 XMLs na pasta ele vai fazer um zip com 10.000 XMLs e outr
 
 ## **5) conferir se valores de um csv estão em outro**
 
-Esse programa veifica se os valores de uma coluna de um CSV estão em outro CSV. 
-Para isso, a comparação é feita na coluna A de ambos os arquivos, que devem ter cabeçalho = Col1
+Esse programa verifica se os valores de uma coluna de um CSV estão em outro CSV. 
+
