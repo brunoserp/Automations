@@ -29,3 +29,8 @@ Há uma interação com o usuário para ele informar a pasta de origem dos arqui
 
 Esse programa serve pra zipar 10.000 XMLs de determinada pasta indicada pelo usuário por vez.
 Assim, se tiver 16.520 XMLs na pasta ele vai fazer um zip com 10.000 XMLs e outro com 6.520.
+
+## **5) conferir se valores de um csv estão em outro**
+
+Esse programa veifica se os valores de uma coluna de um CSV estão em outro CSV. 
+Para isso, a comparação é feita na coluna A de ambos os arquivos, que devem ter cabeçalho = Col1
