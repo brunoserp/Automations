@@ -32,5 +32,9 @@ Assim, se tiver 16.520 XMLs na pasta ele vai fazer um zip com 10.000 XMLs e outr
 
 ## **5) conferir se valores de um csv estão em outro**
 
+## **6) deszipar os zips de uma pasta até que não restem mais zips (zips dentro de zips)
+
+
+
 Esse programa verifica se os valores de uma coluna de um CSV estão em outro CSV. 
 
