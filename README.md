@@ -30,7 +30,9 @@ Há uma interação com o usuário para ele informar a pasta de origem dos arqui
 Esse programa serve pra zipar 10.000 XMLs de determinada pasta indicada pelo usuário por vez.
 Assim, se tiver 16.520 XMLs na pasta ele vai fazer um zip com 10.000 XMLs e outro com 6.520.
 
-## **5) conferir se valores de um csv estão em outro**
+## **5) verificar se as chaves de notas fiscais solicitadas foram enviadas**
+É preciso que ambas as listas estejam em csv para agilizar o processamento. O arquivo final salvo é em .xlsx
+
 
 ## **6) deszipar os zips de uma pasta até que não restem mais zips (zips dentro de zips)
 
