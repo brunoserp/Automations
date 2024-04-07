@@ -1,5 +1,5 @@
 # automatizacoes
-Alguns processos mecânicos que automatizei
+Alguns processos mecânicos que automatizei. Lembrando que fiz esses programas para serem usados por pessoas leigas, então busquei usar a linguagem apropriada.
 
 ## pdf merger.py:**
 
