@@ -26,14 +26,40 @@ def importar_sped_txt():
     pasta_txt = input("Insira a pasta que tenha os txt deszipados >>> ")
     arquivos_pasta = os.listdir(pasta_txt)
     lista = []
-    for arquivo in arquivos_pasta:
-        if arquivo.endswith('.txt'):
-            with open(os.path.join(pasta_txt,arquivo), encoding='ANSI') as arqv:
-                for linhas in arqv:
-                    if linhas.startswith('|C100|'):
-                        lista.append(linhas)
+    for raiz, pastas, arquivos in os.walk(pasta_txt):
+        for arquivo in arquivos:
+            if arquivo.endswith('.txt'):
+                with open(os.path.join(pasta_txt,arquivo), encoding='ANSI') as arqv:
+                    for linhas in arqv:
+                        if linhas.startswith('|C100|'):
+                            lista.append(linhas)
+            
+            elif arquivo.endswith('.zip'):
+                print(f"    Analisando o arquivo zip: {arquivo}")
+                caminho_zip = os.path.join(raiz, arquivo)
+                print(f"caminho_zip: {caminho_zip}")
+                with zipfile.ZipFile(caminho_zip, 'r') as zip_ref:
+                    for file in zip_ref.namelist():
+                        if file.lower().endswith('.zip'):
+                            print(f"        Acessando o zip {file}")
+                            # Se o arquivo for um zip, extraia os txt
+                            inner_zip_content = zip_ref.read(file)
+                            with zipfile.ZipFile(io.BytesIO(inner_zip_content)) as inner_zip_ref:
+                                for inner_file in inner_zip_ref.namelist():
+                                    if inner_file.lower().endswith('.txt'):
+                                        with open(os.path.join(raiz,arquivo), encoding='ANSI') as arqv:
+                                            for linhas in arqv:
+                                                if linhas.startswith('|C100|'):
+                                                    lista.append(linhas)
+                        elif file.lower().endswith('.txt'):
+                            with zip_ref.open(file) as arqv:
+                                with io.TextIOWrapper(arqv, encoding='ANSI') as arqv_decodificado:
+                                    for linhas in arqv_decodificado:
+                                        if linhas.startswith('|C100|'):
+                                            lista.append(linhas)
     
     df_solicitados = pd.DataFrame(lista,dtype=str)
+    print(df_solicitados.head(5))
     df_solicitados = df_solicitados.iloc[:,0].str.split('|',expand=True)
     df_solicitados = (df_solicitados.iloc[:,[6,8,9,10,11]])
     df_solicitados.columns=['COD_SIT','NUM_DOC','CHV_NFE','DT_DOC','DT_E_S']
