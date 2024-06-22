@@ -12,7 +12,7 @@ The final file is saved in the same folder of the PDFs.
 ## **Copy a list of files from a folder to another one.py**
 The user interacts in the terminal to especify some features, as the folder where are the files and the folder to save the files.
 
-## **Zip_xmls**
+## **Zip_xmls.py**
 Zip 10.000 XML per time from a folder especified by the user on terminal.
 If the number oe XML is not equal divisible by 10.000, the last ZIP saved will have the remaining ones.
 
