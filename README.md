@@ -16,11 +16,11 @@ The user interacts in the terminal to especify some features, as the folder wher
 Zip 10.000 XML per time from a folder especified by the user on terminal.
 If the number oe XML is not equal divisible by 10.000, the last ZIP saved will have the remaining ones.
 
-## **NFs solicitadas x enviadas.py**
-Esse programa verifica se os XML das NF solicitados foram enviados. Para isso, é possível passar arquivo csv com as chaves das NF solicitadas ou passar o caminho da pasta pra extrair essas chaves do C100 do SPED. Ainda, é possível também passar um arquivo csv com os nomes dos XML ENVIADOS ou passar o caminho da pasta onde o programa vai extrair o nome dos arquivos XML. Após ter a lista de chaves das NF solicitadas, o programa confronta com a lista com os XML enviados, possibilitando o usuário baixar a lista de chaves de NF solicitadas, XML enviados, as chaves cujos XML foram enviados e as chaves cujos XML NÃO foram enviados (i.e continuam pendentes)
+## **Requested x sent invoices.py**
+Some brazilian companies must deliver a file monthly called EFD ICMS, declaring all operations which ICMS incides over. EFD ICMS is divided by blocks, and there is one, C100, which has a field called invoice key, which is a 44 digit number composed of its operation features. Every invoice is supposed to have a XML, which one this program list as the requested invoices, and the compare it with XML sent.
+It's possible to save a list of the requested XML, sent XML and invoice keys that weren't sent yet.
 
-## **deszipar os zips de uma pasta até que não restem mais zips (zips dentro de zips)**
-Esse programa verifica se os valores de uma coluna de um CSV estão em outro CSV. 
+## **unzip all the files inside zip(s)**
 
-## **listar colunas csv.py**
+## **list csv columns.py**
 Listar o cabeçalho de um arquivo csv para facilitar o bulk insert no SQL.
