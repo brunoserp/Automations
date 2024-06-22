@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-# Inclua o nome da pasta + arquivo para extrair o nome das colunas
+# Include folder + file names inside the quotation marks below
 pasta = r''
 
 for file in os.listdir(pasta):
