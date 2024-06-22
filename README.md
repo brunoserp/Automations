@@ -1,7 +1,7 @@
 # automatizacoes
 Alguns processos mecânicos que automatizei. Lembrando que fiz esses programas para serem usados por pessoas leigas, então busquei usar a linguagem apropriada.
 
-## pdf merger.py:**
+## pdf merger.py:
 
 Junta vários PDFs em um só por meio de interações com o usuário.
 
@@ -26,8 +26,7 @@ Esse programa verifica se os XML das NF solicitados foram enviados. Para isso, �
 
 
 ## **deszipar os zips de uma pasta até que não restem mais zips (zips dentro de zips)**
-
-
-
 Esse programa verifica se os valores de uma coluna de um CSV estão em outro CSV. 
 
+## **listar colunas csv.py**
+Listar o cabeçalho de um arquivo csv para facilitar o bulk insert no SQL.
