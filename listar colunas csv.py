@@ -1,7 +1,8 @@
 import pandas as pd
 import os
 
-pasta = r'C:\Users\bserpellone\Documents\Projetos\FLUKE\SQL'
+# Inclua o nome da pasta + arquivo para extrair o nome das colunas
+pasta = r''
 
 for file in os.listdir(pasta):
     if file.endswith('relat_xml.csv'):
