@@ -24,9 +24,7 @@ If the number oe XML is not equal divisible by 10.000, the last ZIP saved will h
 Some brazilian companies must deliver a file monthly called EFD ICMS, declaring all operations which ICMS incides over. EFD ICMS is divided by blocks, and there is one, C100, which has a field called invoice key, which is a 44 digit number composed of its operation features. Every invoice is supposed to have a XML, which one this program list as the requested invoices, and the compare it with XML sent.
 It's possible to save a list of the requested XML, sent XML and invoice keys that weren't sent yet.
 
-## **unzip all the files inside zip(s)**
-[unzip all the files inside zip(s)](https://github.com/brunoserp/Automations/blob/main/unzip%20all%20the%20files%20inside%20zip(s).py)
+## [unzip all the files inside zip(s)](https://github.com/brunoserp/Automations/blob/main/unzip%20all%20the%20files%20inside%20zip(s).py)
 
-## **list csv columns.py**
-[list csv columns](https://github.com/brunoserp/Automations/blob/main/list%20csv%20columns.py)
+## [list csv columns](https://github.com/brunoserp/Automations/blob/main/list%20csv%20columns.py)
 List the header of a csv file for bulk insert in SQL.
