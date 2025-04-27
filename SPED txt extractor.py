@@ -1,5 +1,3 @@
-# baixe o arquivo "Registro e Campos - EFD ICMS IPI e Contribuições.xlsx" numa pasta e coloque o caminho da pasta na variável pasta dentro da def selecao_registro
-
 import csv
 import os
 import pandas as pd
@@ -36,7 +34,7 @@ if tipo_txt == 'i':
 elif tipo_txt == 'c':
     tipo_txt = 'Contribuições'
 
-# lista para armazenar os dados filtrados
+# lista para armazenar os registros
 filtered_data = []
 
 registro_pai = input("Indique o registro pai desejado: ").title()
@@ -56,7 +54,7 @@ for foldername, subfolders, filenames in os.walk(base_directory):
             if registro_valido is None:
                 qtde +=1
 
-                current_pai = None  # Variável para armazenar o último registro-pai lido
+                current_pai = None  # Variável para armazenar o último registro-pai lido e assim organizar colunas registro pai e depois do filho (repetindo as infos do pai)
 
                 for line in lines:
                     if line.startswith(f'|{registro_pai}|'):
@@ -89,7 +87,7 @@ else:
 
 df.columns = lista_cabecalho
 
-if df.shape[0] < 1000000:
+if df.shape[0] < 50000:
     df.to_excel(os.path.join(base_directory,f'{registro_pai}_{registro_filho}.xlsx'),index=None)
 else:
     df.to_csv(os.path.join(base_directory,f'{registro_pai}_{registro_filho}.csv'),index=None)
