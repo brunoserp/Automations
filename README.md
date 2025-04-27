@@ -13,7 +13,6 @@ Extracts, from SPED txt file (a brazilian official tax file), a register level c
 The final file is saved in the same folder of the PDFs.
 
 ## [Copy a list of files from a folder to another one](https://github.com/brunoserp/Automations/blob/main/copy%20a%20list%20of%20files%20from%20a%20folder%20to%20another%20one.py)
-
 The user interacts in the terminal to especify some features, as the folder where are the files and the folder to save the files.
 
 ## [Zip_xmls](https://github.com/brunoserp/Automations/blob/main/zipar_xmls.py)
