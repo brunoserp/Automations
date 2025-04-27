@@ -1,6 +1,9 @@
 # Automatizations
 Here are some useful programas for my current job. Reminding that I've coded these programs to be accesible to laypeople use these programs.
 
+## SPED txt extractor.py
+Extracts, from SPED txt file (a brazilian official tax file), a register level connected with its immediatly level up register. The final file is set as first level up register columns followed by its immediatly son register at right. Its required an Excel file with header info of each register.
+
 ## PDF merger.py:
 3 types of merge, which ones the user especifies answering the program questions:
 - merge all PDFs from a folder
