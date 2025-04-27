@@ -16,7 +16,6 @@ The final file is saved in the same folder of the PDFs.
 The user interacts in the terminal to especify some features, as the folder where are the files and the folder to save the files.
 
 ## [Zip_xmls](https://github.com/brunoserp/Automations/blob/main/zipar_xmls.py)
-## **Copy a list of files from a folder to another one.py**
 Zip 10.000 XML per time from a folder especified by the user on terminal.
 If the number oe XML is not equal divisible by 10.000, the last ZIP saved will have the remaining ones.
 
